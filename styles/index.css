@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 15px 40px;
+  font-family: "Lexend Deca";
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: hsla(0, 0%, 100%, 0);
+  border-color: hsl(0, 0%, 95%);
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.orange-text {
+  color: hsl(31, 77%, 52%);
+}
+
+.cyan-text {
+  color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan-text {
+  color: hsl(179, 100%, 13%);
+}
+
+.orange-bg {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan-bg {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan-bg {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.secondary {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cars-card {
+  max-width: 60%;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .cars-card {
+    max-width: 80%;
+    width: 800px;
+    flex-direction: row;
+  }
+}
+
+.cars-section {
+  height: 500px;
+  padding: 30px 50px;
+  color: white;
+  position: relative;
+}
+
+.cars-section > * + * {
+  margin-top: 30px;
+}
+
+.cars-section > :last-child {
+  position: absolute;
+  bottom: 30px;
+}
+
+.cars-section__header {
+  font-family: 'Big Shoulders Display';
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cars-section__desc {
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.attribution { 
+  width: 100%;
+  font-size: 11px; 
+  text-align: center;
+  margin: 10px 0;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
